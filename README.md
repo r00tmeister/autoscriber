@@ -1,76 +1,46 @@
-# Nuxt 3 Minimal Starter
+# Autoscriber Application
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a Nuxt.js application that is containerized using Docker.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have installed the latest version of [Docker](https://www.docker.com/products/docker-desktop) and [Docker Compose](https://docs.docker.com/compose/install/).
 
 ## Setup
 
-Make sure to install the dependencies:
+Follow these steps to get your development environment set up:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/r00tmeister/autoscriber.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd autoscriber
+    ```
+
+## Running the Application
+
+To start the application in development mode, run:
 
 ```bash
-# npm
-npm install
+docker-compose -p autoscriber up --build
 
-# pnpm
-pnpm install
+This command builds the Docker image and starts the Docker container. The application will be accessible at `http://localhost:3000`.
 
-# yarn
-yarn install
+## Documentation
 
-# bun
-bun install
-```
+For more details on working with Nuxt.js, refer to the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction).
 
-## Development Server
+For information on deploying Nuxt.js applications, check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
 
-Start the development server on `http://localhost:3000`:
+## Contributing
 
-```bash
-# npm
-npm run dev
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
-# pnpm
-pnpm run dev
+## License
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# autoscriber
+This project is licensed under the [MIT License](LICENSE.md).
