@@ -47,7 +47,7 @@ To start the application in development mode, run:
 
 ```bash
 docker-compose -p autoscriber up --build
-
+```
 This command builds the Docker image and starts the Docker container. The application will be accessible at `http://localhost:3000`.
 
 ## Documentation
