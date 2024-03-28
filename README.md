@@ -21,6 +21,25 @@ Follow these steps to get your development environment set up:
     ```bash
     cd autoscriber
     ```
+## Environment Variables
+
+This project uses environment variables for configuration. To set up your environment variables:
+
+1. Copy the `.env.example` file in the root directory of the project and rename it to `.env`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+2. Open the `.env` file and replace the placeholder values with your actual values. For example, replace `your_supabase_url` with the URL of your Supabase instance, and replace `your_supabase_api_key` with your actual Supabase API key.
+
+    ```env
+    # .env
+    NUXT_ENV_SUPABASE_URL=https://xyzcompany.supabase.co
+    NUXT_ENV_SUPABASE_API_KEY=123456789abcdef
+    ```
+
+3. Save the `.env` file. The application will now use the values from this file for its configuration.
 
 ## Running the Application
 
